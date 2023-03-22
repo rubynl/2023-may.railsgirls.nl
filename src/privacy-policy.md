@@ -52,6 +52,8 @@ If you have agreed to receive communication about future updates, we will contac
 
 If you sign up as a coach and agree to publicly list your name on the website, we will add your name to the coaches section once the coach selection is made.
 
+During the event we will take pictures of the people present at the workshop. These pictures will be shared on the Rails Girls The Netherlands websites and social media accounts. If you do not agree to have your likeness shared, please inform the organizers at the day of the workshop and you will not be included in the pictures.
+
 After the event we may also reach out with a feedback form. This information will be collected anonymously.
 
 Your information will not be shared with partners of the event.
