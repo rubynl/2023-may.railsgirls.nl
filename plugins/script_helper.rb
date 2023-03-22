@@ -12,12 +12,7 @@ module ScriptHelper
   end
 
   def plausible_domain
-    env_domain = ENV.fetch("PLAUSIBLE_DOMAIN", "").strip
-    if env_domain.empty?
-      "railsgirls.nl"
-    else
-      env_domain
-    end
+    site.metadata.plausible_domain
   end
 
   def plausible_script
