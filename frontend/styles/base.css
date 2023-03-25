@@ -192,9 +192,8 @@ img {
 }
 
 footer {
-
   & .section {
-    padding-top: var(--spacing-medium);
+    padding-top: var(--spacing-small);
     border-top: 4px solid #FFD9DE;
     font-size: 1.2rem;
   }
@@ -209,6 +208,11 @@ footer {
 
   @media (min-width: 640px) {
     text-align: center;
+
+    & .section {
+      padding-top: var(--spacing-medium);
+    }
+
     & ul {
       margin: 0;
     }

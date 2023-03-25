@@ -11,8 +11,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 0;
-    height: calc(100vh - 30px);
-    min-height: 640px;
 
     & header {
       flex-grow: 0;
@@ -95,7 +93,7 @@ iframe {
 }
 
 .team-section {
-  --columns: 5;
+  --columns: 4;
 
   & ul {
     --gap: var(--spacing-small);
@@ -119,19 +117,14 @@ iframe {
     text-align: center;
   }
 
-  @media (max-width: 900px) {
-    --columns: 3;
-
-    & li {
-      flex-basis: calc((100vw / var(--columns)) - var(--spacing-small) - (var(--gap) / var(--columns)));
-    }
-  }
-
-  @media (max-width: 550px) {
+  @media (max-width: 640px) {
     --columns: 2;
 
     & ul {
       gap: var(--spacing-tiny);
+    }
+    & li {
+      flex-basis: calc((100vw / var(--columns)) - var(--spacing-small) - (var(--gap) / var(--columns)));
     }
   }
 }
