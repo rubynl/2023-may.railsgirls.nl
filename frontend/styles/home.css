@@ -130,13 +130,15 @@ iframe {
 }
 
 ul.coaches-list {
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .coaches-list li {
   --columns: 3;
   display: flex;
   align-items: center;
+
+  font-size: 90%;
 
   @media (max-width: 900px) {
     --columns: 2;
@@ -147,12 +149,11 @@ ul.coaches-list {
   }
 }
 .coaches-list li span {
-  font-size: 90%;
   text-align: left;
 }
 
 .coach-placeholder {
-  --size: 50px;
+  --size: 100px;
   margin-right: 10px;
   min-width: var(--size);
   min-height: var(--size);

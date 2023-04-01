@@ -8,26 +8,27 @@ full_title: "Rails Girls NL"
   <%= partial "header" %>
 
   <div class="section-intro-content">
-    <h1>Welcome to Rails Girls The Netherlands</h1>
+    <h2>
+      20th of May, 2023<br>
+      Rotterdam
+    </h2>
 
     <p class="large-text">A <em>free</em>, one day workshop. Discover the exciting world of web development through Ruby on Rails! With the help and guidance of our coaches, you can create a real web application in a fun and relaxed environment.</p>
 
-    <p class="large-text">The <strong>next workshop</strong> has not yet been planned.</p>
-
-    <p><%= link_to "Join the waiting list <span aria-hidden=\"true\">»</span>", site.metadata.attendee_sign_up_form_url, :class => "button sign-up-button" %></p>
+    <p><%= link_to "Join us!", site.metadata.participant_sign_up_form_url, :class => "button sign-up-button" %></p>
+    <p>Want to help out as a coach? <%= link_to "Sign up using the coach form!", site.metadata.coach_sign_up_form_url %></p>
   </div>
 </section>
 
 <section class="section schedule" id="schedule">
   <h2>Workshop program</h2>
-  <p><em>The workshop program may change for the next workshop.</em></p>
 
   <table id="schedule">
     <tbody>
       <tr>
         <th>9:00 AM</th>
         <td>
-          Coffee and tea. Prepare laptops for programming.
+          Coffee and tea. Prepare laptops
         </td>
       </tr>
       <tr>
@@ -74,34 +75,59 @@ full_title: "Rails Girls NL"
       </tr>
     </tbody>
   </table>
+
+  <p><em>The exact program may change before the workshop, but the start and end times are set.</em></p>
 </section>
 
 <section class="section" id="location">
   <h2>Location</h2>
 
   <p>
-    To be decided.
+    <a href="https://beequip.com/nl/"><strong>Beequip</strong></a><br>
+    Willemskade 18<br>
+    3016 DL, Rotterdam
   </p>
+
+  <div class="map-placeholder js-map-placeholder">
+    <div>
+      <p>
+        To show this Google Maps element you need to accept cookies,<br>
+        or go directly to the <a href="https://goo.gl/maps/vrApm8KH43oexfHs5">Google Maps website</a>.
+      </p>
+      <button class="button js-cookie-accept">Accept cookies</button>
+    </div>
+  </div>
+  <iframe
+    src=""
+    width="900"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="map js-map"
+    data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d302.0428598164965!2d4.4814338646177365!3d51.90870958713939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c43363f26be71f%3A0x50d60cb9802217d4!2sBEEQUIP!5e0!3m2!1sen!2snl!4v1680339926093!5m2!1sen!2snl"
+  ></iframe>
 </section>
 
 <section class="section" id="faq">
   <h2>Frequently Asked Questions</h2>
 
-  <h3>Where can I sign up as an attendee?</h3>
-  <p>We're planning new workshops for the year. <a href="https://forms.gle/1nWH8z6uEpW88p4s5">Sign up on the waiting list</a> if you want to be informed about new workshops.</p>
+  <h3>Where can I sign up as a participant?</h3>
+  <p>We're planning new workshops for the year. <%= link_to "Sign up on the waiting list", site.metadata.participant_sign_up_form_url %> if you want to be informed about new workshops.</p>
 
   <h3>How much does the workshop cost?</h3>
   <p>Nothing, it's free! You just need to be excited to learn!</p>
 
   <h3>Do I need a laptop?</h3>
-  <p>Yes! Please bring a laptop with you to the workshop. Don't forget your charger! You can either prepare your laptop at home by <a href="https://guides.railsgirls.com/install">installing the necessary software</a>, or install it the morning of the workshop.</p>
+  <p>Yes! Please bring a laptop with you to the workshop. Don't forget your charger! You can either prepare your laptop at home by <a href="https://guides.railsgirls.com/install">installing the necessary software</a>, or install it the morning of the workshop with the help of a coach.</p>
 
-  <h3>Who can attend?</h3>
+  <h3>Who can participate?</h3>
   <p>This workshop is aimed at women with a basic knowledge of working with a computer, who want to try out software development. People from other genders can apply, but women are given priority at this workshop. We welcome the LGBTQIA+ crowd.</p>
   <p>We've had people of all ages taking part. Most of the course and announcements are given in English and small group work is done in either Dutch or English.</p>
 
   <h3>How many people can attend?</h3>
-  <p>The maximum number of partipicants varies per workshop. Sign up quick to secure your spot once a new workshop is announced!</p>
+  <p>The maximum number of participants varies per workshop. Sign up quick to secure your spot once a new workshop is announced!</p>
 
   <h3>Are meals provided during the workshop?</h3>
   <p>Yes! We offer lunch and snacks during the workshop. Let us know your food limitations using the workshop's sign up form.</p>
@@ -110,7 +136,7 @@ full_title: "Rails Girls NL"
   <p>We got you covered! Both a vegetarian and a vegan option will be made available.</p>
 
   <h3>Can I bring my children?</h3>
-  <p>Yes! We have childcare services available for attendees. This is for children maximum age five. We have a separate room and dedicated people to look after any children present. Please indicate if you will bring children on the sign up form. If you forgot to indicate this or need to update your answer, please <a href="mailto:contact@railsgirls.nl">email us</a>.</p>
+  <p>Yes! We have childcare services available for participants. This is for children maximum age five. We have a separate room and dedicated people to look after any children present. Please indicate if you will bring children on the sign up form. If you forgot to indicate this or need to update your answer, please <a href="mailto:contact@railsgirls.nl">email us</a>.</p>
 
   <h3>What happens once I've signed up?</h3>
   <p>Once we have enough sign ups and coaches, we will send out confirmations for everyone that can attend. A waiting list is available if we're fully booked, in case anyone cancels and a space opens up.</p>
@@ -123,7 +149,7 @@ full_title: "Rails Girls NL"
   <p>Yes! We follow the Contributor Covenant <a href="/code-of-conduct/">Code of Conduct</a>.</p>
 
   <h3>Can I help out?</h3>
-  <p>Thank you! We will be looking for coaches when the next workshop planning is done. Watch this space for announcements about the next workshop.</p>
+  <p>Thank you! We are looking for coaches to help us at the day of the workshop. <%= link_to "Sign up as a coach", site.metadata.coach_sign_up_form_url %> using the linked form.</p>
 
   <h3>What is this workshop?</h3>
   <p>This workshop is a local edition of <a href="http://railsgirls.com">Rails Girls</a> events. An international group of volunteers organizing events in their local areas. <a href="https://rubynl.org">Stichting Ruby NL</a> has organized previous Rails Girls events, like the <a href="http://2023-march.railsgirls.nl">Rotterdam 2023 edition</a>, <a href="http://railsgirls.com/amsterdam2019.html">Amsterdam 2019 edition</a> and <a href="http://railsgirls.com/rotterdam-06-2019.html">Rotterdam 2019 edition</a>.</p>
@@ -153,6 +179,21 @@ full_title: "Rails Girls NL"
       <span>Arno Fleming</span>
     </li>
   </ul>
+</section>
+
+<section class="section team-section" id="coaches">
+  <h2>Coaches</h2>
+
+  <p>To be announced!</p>
+
+  <ul class="coaches-list">
+    <li>
+      <div class="coach-placeholder"></div>
+      <span class="large-text"><%= link_to "<strong>You?</strong>", site.metadata.coach_sign_up_form_url %></span>
+    </li>
+  </ul>
+
+  <p class="text-center">Want to help out as a coach? <%= link_to "Sign up using the coach form!", site.metadata.coach_sign_up_form_url %></p>
 </section>
 
 <div class="hero-home"></div>
