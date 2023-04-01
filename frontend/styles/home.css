@@ -50,12 +50,17 @@
   }
 }
 
+.partner-logo-wrapper {
+  text-align: center;
+}
+
 .partner-logo {
   display: inline-block;
   margin: 0 auto;
+  text-align: center;
 
   & img {
-    width: 400px;
+    width: 300px;
   }
 }
 
