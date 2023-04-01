@@ -33,7 +33,7 @@ Cookies are files with small amount of data stored on your computer when visitin
 
 Our websites makes use of [third-party services](#third-party-services) that also set their own cookies if accepted.
 
-<div class="choise-manager-embedded">
+<div class="choice-manager-embedded">
   <h3>Your cookie preferences</h3>
   <p>This widget allows you to edit your cookie preferences. Some changes will take affect next time you load a page on this website.</p>
   <p>You have currently: <strong class="js-choice-status">Loading status...</strong></p>
