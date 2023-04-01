@@ -11,7 +11,7 @@ function hasDeclinedCookies() {
 }
 
 function setChoice(value) {
-  document.cookie = `cookies=${value}; SameSite=strict; Secure`;
+  document.cookie = `cookies=${value}; SameSite=strict; Secure; path=/`;
 }
 
 function hideChoiceManager() {
