@@ -98,7 +98,7 @@ iframe {
 }
 
 .team-section {
-  --columns: 4;
+  --columns: 5;
 
   & ul {
     --gap: var(--spacing-small);
@@ -122,14 +122,19 @@ iframe {
     text-align: center;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 900px) {
+    --columns: 3;
+
+    & li {
+      flex-basis: calc((100vw / var(--columns)) - var(--spacing-small) - (var(--gap) / var(--columns)));
+    }
+  }
+
+  @media (max-width: 550px) {
     --columns: 2;
 
     & ul {
       gap: var(--spacing-tiny);
-    }
-    & li {
-      flex-basis: calc((100vw / var(--columns)) - var(--spacing-small) - (var(--gap) / var(--columns)));
     }
   }
 }
