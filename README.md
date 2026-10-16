@@ -1,6 +1,6 @@
 # Rails Girls NL website
 
-The website of Rails Girls NL. It can be found at [2023-may.railsgirls.nl](https://railsgirls.nl).
+The website of Rails Girls NL. It can be found at [railsgirls.2023-may.rubynl.org](https://railsgirls.2023-may.rubynl.org).
 
 ## Table of Contents
 
